@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B50524D52016E073009BD9B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B50524D42016E073009BD9B1 /* AppDelegate.m */; };
+		B50524D82016E073009BD9B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50524D72016E073009BD9B1 /* ViewController.m */; };
+		B50524DA2016E073009BD9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50524D92016E073009BD9B1 /* Assets.xcassets */; };
+		B50524DD2016E073009BD9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50524DB2016E073009BD9B1 /* Main.storyboard */; };
+		B50524E02016E073009BD9B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B50524DF2016E073009BD9B1 /* main.m */; };
+		B50524EB2016E073009BD9B1 /* FRCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50524EA2016E073009BD9B1 /* FRCollectionViewTests.m */; };
+		B50524F62016E073009BD9B1 /* FRCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50524F52016E073009BD9B1 /* FRCollectionViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B50524E72016E073009BD9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B50524C82016E073009BD9B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50524CF2016E073009BD9B1;
+			remoteInfo = FRCollectionView;
+		};
+		B50524F22016E073009BD9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B50524C82016E073009BD9B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50524CF2016E073009BD9B1;
+			remoteInfo = FRCollectionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B50524D02016E073009BD9B1 /* FRCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50524D32016E073009BD9B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B50524D42016E073009BD9B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B50524D62016E073009BD9B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B50524D72016E073009BD9B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B50524D92016E073009BD9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B50524DC2016E073009BD9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B50524DE2016E073009BD9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50524DF2016E073009BD9B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B50524E12016E073009BD9B1 /* FRCollectionView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FRCollectionView.entitlements; sourceTree = "<group>"; };
+		B50524E62016E073009BD9B1 /* FRCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50524EA2016E073009BD9B1 /* FRCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCollectionViewTests.m; sourceTree = "<group>"; };
+		B50524EC2016E073009BD9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50524F12016E073009BD9B1 /* FRCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50524F52016E073009BD9B1 /* FRCollectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCollectionViewUITests.m; sourceTree = "<group>"; };
+		B50524F72016E073009BD9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B50524CD2016E073009BD9B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50524E32016E073009BD9B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50524EE2016E073009BD9B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50524C72016E073009BD9B1 = {
+			isa = PBXGroup;
+			children = (
+				B50524D22016E073009BD9B1 /* FRCollectionView */,
+				B50524E92016E073009BD9B1 /* FRCollectionViewTests */,
+				B50524F42016E073009BD9B1 /* FRCollectionViewUITests */,
+				B50524D12016E073009BD9B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B50524D12016E073009BD9B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B50524D02016E073009BD9B1 /* FRCollectionView.app */,
+				B50524E62016E073009BD9B1 /* FRCollectionViewTests.xctest */,
+				B50524F12016E073009BD9B1 /* FRCollectionViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B50524D22016E073009BD9B1 /* FRCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B50524D32016E073009BD9B1 /* AppDelegate.h */,
+				B50524D42016E073009BD9B1 /* AppDelegate.m */,
+				B50524D62016E073009BD9B1 /* ViewController.h */,
+				B50524D72016E073009BD9B1 /* ViewController.m */,
+				B50524D92016E073009BD9B1 /* Assets.xcassets */,
+				B50524DB2016E073009BD9B1 /* Main.storyboard */,
+				B50524DE2016E073009BD9B1 /* Info.plist */,
+				B50524DF2016E073009BD9B1 /* main.m */,
+				B50524E12016E073009BD9B1 /* FRCollectionView.entitlements */,
+			);
+			path = FRCollectionView;
+			sourceTree = "<group>";
+		};
+		B50524E92016E073009BD9B1 /* FRCollectionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				B50524EA2016E073009BD9B1 /* FRCollectionViewTests.m */,
+				B50524EC2016E073009BD9B1 /* Info.plist */,
+			);
+			path = FRCollectionViewTests;
+			sourceTree = "<group>";
+		};
+		B50524F42016E073009BD9B1 /* FRCollectionViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B50524F52016E073009BD9B1 /* FRCollectionViewUITests.m */,
+				B50524F72016E073009BD9B1 /* Info.plist */,
+			);
+			path = FRCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B50524CF2016E073009BD9B1 /* FRCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50524FA2016E073009BD9B1 /* Build configuration list for PBXNativeTarget "FRCollectionView" */;
+			buildPhases = (
+				B50524CC2016E073009BD9B1 /* Sources */,
+				B50524CD2016E073009BD9B1 /* Frameworks */,
+				B50524CE2016E073009BD9B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRCollectionView;
+			productName = FRCollectionView;
+			productReference = B50524D02016E073009BD9B1 /* FRCollectionView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B50524E52016E073009BD9B1 /* FRCollectionViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50524FD2016E073009BD9B1 /* Build configuration list for PBXNativeTarget "FRCollectionViewTests" */;
+			buildPhases = (
+				B50524E22016E073009BD9B1 /* Sources */,
+				B50524E32016E073009BD9B1 /* Frameworks */,
+				B50524E42016E073009BD9B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B50524E82016E073009BD9B1 /* PBXTargetDependency */,
+			);
+			name = FRCollectionViewTests;
+			productName = FRCollectionViewTests;
+			productReference = B50524E62016E073009BD9B1 /* FRCollectionViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B50524F02016E073009BD9B1 /* FRCollectionViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50525002016E073009BD9B1 /* Build configuration list for PBXNativeTarget "FRCollectionViewUITests" */;
+			buildPhases = (
+				B50524ED2016E073009BD9B1 /* Sources */,
+				B50524EE2016E073009BD9B1 /* Frameworks */,
+				B50524EF2016E073009BD9B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B50524F32016E073009BD9B1 /* PBXTargetDependency */,
+			);
+			name = FRCollectionViewUITests;
+			productName = FRCollectionViewUITests;
+			productReference = B50524F12016E073009BD9B1 /* FRCollectionViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B50524C82016E073009BD9B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Fan's iMac ";
+				TargetAttributes = {
+					B50524CF2016E073009BD9B1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B50524E52016E073009BD9B1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B50524CF2016E073009BD9B1;
+					};
+					B50524F02016E073009BD9B1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B50524CF2016E073009BD9B1;
+					};
+				};
+			};
+			buildConfigurationList = B50524CB2016E073009BD9B1 /* Build configuration list for PBXProject "FRCollectionView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B50524C72016E073009BD9B1;
+			productRefGroup = B50524D12016E073009BD9B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B50524CF2016E073009BD9B1 /* FRCollectionView */,
+				B50524E52016E073009BD9B1 /* FRCollectionViewTests */,
+				B50524F02016E073009BD9B1 /* FRCollectionViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B50524CE2016E073009BD9B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50524DA2016E073009BD9B1 /* Assets.xcassets in Resources */,
+				B50524DD2016E073009BD9B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50524E42016E073009BD9B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50524EF2016E073009BD9B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B50524CC2016E073009BD9B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50524D82016E073009BD9B1 /* ViewController.m in Sources */,
+				B50524E02016E073009BD9B1 /* main.m in Sources */,
+				B50524D52016E073009BD9B1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50524E22016E073009BD9B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50524EB2016E073009BD9B1 /* FRCollectionViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50524ED2016E073009BD9B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50524F62016E073009BD9B1 /* FRCollectionViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B50524E82016E073009BD9B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B50524CF2016E073009BD9B1 /* FRCollectionView */;
+			targetProxy = B50524E72016E073009BD9B1 /* PBXContainerItemProxy */;
+		};
+		B50524F32016E073009BD9B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B50524CF2016E073009BD9B1 /* FRCollectionView */;
+			targetProxy = B50524F22016E073009BD9B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B50524DB2016E073009BD9B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B50524DC2016E073009BD9B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B50524F82016E073009BD9B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B50524F92016E073009BD9B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B50524FB2016E073009BD9B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FRCollectionView/FRCollectionView.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DZQ5YNVEU2;
+				INFOPLIST_FILE = FRCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Frank.FRCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B50524FC2016E073009BD9B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FRCollectionView/FRCollectionView.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DZQ5YNVEU2;
+				INFOPLIST_FILE = FRCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Frank.FRCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B50524FE2016E073009BD9B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DZQ5YNVEU2;
+				INFOPLIST_FILE = FRCollectionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Frank.FRCollectionViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRCollectionView.app/Contents/MacOS/FRCollectionView";
+			};
+			name = Debug;
+		};
+		B50524FF2016E073009BD9B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DZQ5YNVEU2;
+				INFOPLIST_FILE = FRCollectionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Frank.FRCollectionViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRCollectionView.app/Contents/MacOS/FRCollectionView";
+			};
+			name = Release;
+		};
+		B50525012016E073009BD9B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DZQ5YNVEU2;
+				INFOPLIST_FILE = FRCollectionViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Frank.FRCollectionViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FRCollectionView;
+			};
+			name = Debug;
+		};
+		B50525022016E073009BD9B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DZQ5YNVEU2;
+				INFOPLIST_FILE = FRCollectionViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Frank.FRCollectionViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FRCollectionView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B50524CB2016E073009BD9B1 /* Build configuration list for PBXProject "FRCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50524F82016E073009BD9B1 /* Debug */,
+				B50524F92016E073009BD9B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50524FA2016E073009BD9B1 /* Build configuration list for PBXNativeTarget "FRCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50524FB2016E073009BD9B1 /* Debug */,
+				B50524FC2016E073009BD9B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50524FD2016E073009BD9B1 /* Build configuration list for PBXNativeTarget "FRCollectionViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50524FE2016E073009BD9B1 /* Debug */,
+				B50524FF2016E073009BD9B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50525002016E073009BD9B1 /* Build configuration list for PBXNativeTarget "FRCollectionViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50525012016E073009BD9B1 /* Debug */,
+				B50525022016E073009BD9B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B50524C82016E073009BD9B1 /* Project object */;
+}
