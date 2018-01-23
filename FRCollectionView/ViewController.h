@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
+@property (weak) IBOutlet NSCollectionView *collectionView;
 
 
 @end
