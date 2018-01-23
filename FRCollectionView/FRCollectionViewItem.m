@@ -7,6 +7,7 @@
 //
 
 #import "FRCollectionViewItem.h"
+#import "FRCollectionViewItemView.h"
 
 @interface FRCollectionViewItem ()
 
@@ -15,7 +16,9 @@
 @implementation FRCollectionViewItem
 
 - (void)loadView {
-    self.view = [[NSView alloc] init];
+    self.view = [[FRCollectionViewItemView alloc] init];
+    
+
     self.iv = [[NSImageView alloc] initWithFrame:self.view.bounds];
     self.iv.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
     [self.view addSubview:self.iv];

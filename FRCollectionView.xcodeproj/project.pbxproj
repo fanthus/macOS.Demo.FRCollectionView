@@ -15,6 +15,7 @@
 		B50524EB2016E073009BD9B1 /* FRCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50524EA2016E073009BD9B1 /* FRCollectionViewTests.m */; };
 		B50524F62016E073009BD9B1 /* FRCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50524F52016E073009BD9B1 /* FRCollectionViewUITests.m */; };
 		B5052509201727A4009BD9B1 /* FRCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B5052507201727A4009BD9B1 /* FRCollectionViewItem.m */; };
+		B505250D20174377009BD9B1 /* FRCollectionViewItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B505250C20174377009BD9B1 /* FRCollectionViewItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B50524F72016E073009BD9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5052506201727A4009BD9B1 /* FRCollectionViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRCollectionViewItem.h; sourceTree = "<group>"; };
 		B5052507201727A4009BD9B1 /* FRCollectionViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCollectionViewItem.m; sourceTree = "<group>"; };
+		B505250B20174377009BD9B1 /* FRCollectionViewItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRCollectionViewItemView.h; sourceTree = "<group>"; };
+		B505250C20174377009BD9B1 /* FRCollectionViewItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCollectionViewItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				B50524D72016E073009BD9B1 /* ViewController.m */,
 				B5052506201727A4009BD9B1 /* FRCollectionViewItem.h */,
 				B5052507201727A4009BD9B1 /* FRCollectionViewItem.m */,
+				B505250B20174377009BD9B1 /* FRCollectionViewItemView.h */,
+				B505250C20174377009BD9B1 /* FRCollectionViewItemView.m */,
 				B50524D92016E073009BD9B1 /* Assets.xcassets */,
 				B50524DB2016E073009BD9B1 /* Main.storyboard */,
 				B50524DE2016E073009BD9B1 /* Info.plist */,
@@ -271,6 +276,7 @@
 				B50524D82016E073009BD9B1 /* ViewController.m in Sources */,
 				B50524E02016E073009BD9B1 /* main.m in Sources */,
 				B50524D52016E073009BD9B1 /* AppDelegate.m in Sources */,
+				B505250D20174377009BD9B1 /* FRCollectionViewItemView.m in Sources */,
 				B5052509201727A4009BD9B1 /* FRCollectionViewItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

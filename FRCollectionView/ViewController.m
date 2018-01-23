@@ -63,11 +63,13 @@
 #pragma mark - NSCollectionViewDelegate
 
 
+- (NSSet<NSIndexPath *> *)collectionView:(NSCollectionView *)collectionView shouldChangeItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths toHighlightState:(NSCollectionViewItemHighlightState)highlightState {
+    return indexPaths;
+}
 
 #pragma mark - NSCollectionViewDataSource
 
 - (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSLog(@"numberOfItemsInSection:%lu",(unsigned long)images.count);
     return images.count;
 }
 
@@ -75,12 +77,22 @@
     return 1;
 }
 
-
 - (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"collectionView:%@ itemForRepresentedObjectAtIndexPath:%@",collectionView,indexPath);
     FRCollectionViewItem *item = [collectionView makeItemWithIdentifier:@"fr_item" forIndexPath:indexPath];
     item.iv.image = [images objectAtIndex:indexPath.item];
+    item.view.menu  = [self rightMenu];
     return item;
+}
+
+- (NSMenu *)rightMenu {
+    NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Right"];
+    NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"ClickMe" action:@selector(click:) keyEquivalent:@"\r"];
+    [menu addItem:menuItem];
+    return  menu;
+}
+
+- (void)click:(id)sender {
+    NSLog(@"click me");
 }
 
 - (void)setRepresentedObject:(id)representedObject {
