@@ -2,7 +2,7 @@
 
 [Collection Views in OS X Tutorial](https://www.raywenderlich.com/120494/collection-views-os-x-tutorial) 的 demo 实现
 
-## CollectionView 一些元素
+## CollectionView 元素
 
 **布局类**
 
@@ -17,6 +17,7 @@
 `Sections and NSIndexPath` 将 items 组合放入 section 内。每个 item 都可以由 indexPath 的 section 和 item 这两个整数组成。默认有一个 section. 这部分的概念和 iOS 上的 UICollectionView 还是挺像的。
 
 **CollectionViewItem 类**
+
 `The Model and the View` 来自 Model 数据类对象，每个 Model 都是一个小 itemView 的数据实体，itemView 展示 Model 的内容。一般小的 itemView 都是定义在一个单独的 nib 文件中。（跟我们之前做 iOS 的时候还是很像）
 使用 collectionView 的注意事项：
 
@@ -33,8 +34,30 @@
 `The Controller` 一般都是一个 ViewController 来负责协调 itemView 视图类和 model 实体类。
 
 
+## CollectionView 方法
+1. 必要的数据源方法需要实现
+
+    ```
+    //具体的 items 
+    - (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+    //具体 collectionViewItem 的配置
+    - (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath 
+    ```
+2. 在尝试获取 NSCollectionViewItem 的时候一定要先注册！
+
+    ```
+    [self.collectionView registerClass:[FRCollectionViewItem class] forItemWithIdentifier:@"fr_item"];
+    ....
+    FRCollectionViewItem *item = [collectionView makeItemWithIdentifier:@"fr_item" forIndexPath:indexPath];
+    ```
 
 
+## CollectionView 坑
 
+1. demo 里面  NSCollectionView 是从 StoryBoard 里拖出来的。我之前手写的 NSCollectionView 总是不行，即使是放到 NSScrollView 也不行。不确定是哪出的问题这点的设计跟 NSTableView 是一样的。我最开始还以为是 NSCollectionViewItem 继承有问题，在这儿徘徊了半天，最后发现是 NSColletionView 配置的锅。
+2. `[collectionView makeItemWithIdentifier:@"xxx" forIndexPath:indexPath];` 这个方法返回 nil 需要检查两点:
+    1. 是不是最开始 registerClass 了
+    2. 检查 collectionView 是否正确配置了
+        
 
 
